@@ -53,6 +53,10 @@ function startTask( projectID, callback )
         billable:    true,
         pid: projectID
     }, function(err, timeEntry) {
+
+        if( err )
+            return console.error(err);
+
         var res = fs.writeFile(persist, timeEntry.id, function(err) {
             callback();
         });
