@@ -2,8 +2,7 @@
 var TogglClient = require('toggl-api'),
     fs = require('fs'),
     projects = require('./projects.json'),
-    replaces = require('./replaces.json'),
-    path = require('path');
+    replaces = require('./replaces.json');
 
 var toggl = new TogglClient({apiToken: process.env.TOGGL_API_TOKEN})
 
@@ -12,7 +11,8 @@ if( ! process.env.TOGGL_API_TOKEN )
 
 var action = process.argv[2];
 var project = process.argv[3];
-var persist = path.resolve(__dirname + '/.toggle');
+var home = process.env.HOME || process.env.USERPROFILE;
+var persist = home + '/.doing';
 
 
 if( action != 'stop' && action != 'start' ) {
