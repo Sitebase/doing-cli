@@ -19,7 +19,10 @@ and when you want to take a break you can use:
 
 ## Install
 
-Check the project out in your home folder `bin` directory and run `npm install` in the checked out folder.
+Run following command:
+
+    npm install -g git+https://git@github.com/bubobox/doing-cli.git
+
 Add to you `bash` or `zsh` profile an extra environment variable that contains the toggl API key:
 
     export TOGGL_API_TOKEN="your-key-here"

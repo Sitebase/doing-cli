@@ -1,8 +1,11 @@
 {
-  "name": "workon-cli",
+  "name": "doing",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "toggl": "./bin/doing"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
