@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "toggl": "./bin/doing"
+    "doing": "./doing.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
